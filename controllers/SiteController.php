@@ -50,16 +50,18 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
+        $json = json_decode(\Requests::get('https://api.twitch.tv/kraken/games/top')->body, TRUE);
 
-        $twitch = \Vinlock\StreamAPI\Services\Twitch::game("Dota 2");
+        $twitch = \Vinlock\StreamAPI\Services\Twitch::games();
 
-        $merge = \Vinlock\StreamAPI\Services\Service::merge($twitch);
+        //$merge = \Vinlock\StreamAPI\Services\Service::merge($twitch);
 
-        $merge = $merge->cut(2);
+        //$merge = $merge->cut(2);
 
-        $output = $merge->getArray();
 
-        return $this->render('index', ['data' => $output]);
+        $output = $twitch->getArray();
+
+        return $this->render('about', ['data' => $output]);
     }
 
     public function actionLogin()
