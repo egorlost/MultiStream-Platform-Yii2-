@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b1ece5cafc90cdd2990ea5f363bb56d6",
-    "content-hash": "ea3994a5eeced6c6703c783926ce0e39",
+    "content-hash": "f5a9733001e01a763379fc19863f17ed",
     "packages": [
         {
             "name": "2amigos/yii2-transliterator-helper",
@@ -48,7 +47,7 @@
                 "transliterator",
                 "yii"
             ],
-            "time": "2014-01-17 15:55:42"
+            "time": "2014-01-17T15:55:42+00:00"
         },
         {
             "name": "bizley/podium",
@@ -101,7 +100,7 @@
                 "podium",
                 "yii2"
             ],
-            "time": "2016-01-01 19:04:42"
+            "time": "2016-01-01T19:04:42+00:00"
         },
         {
             "name": "bizley/quill",
@@ -113,7 +112,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bizley/yii2-quill/zipball/d94ce16a64e4e693075226c863ed9f78315720a9",
+                "url": "https://api.github.com/repos/bizley/yii2-quill/zipball/abd91ccf990d43af1b0d565e60f7a7b5d32ecb72",
                 "reference": "abd91ccf990d43af1b0d565e60f7a7b5d32ecb72",
                 "shasum": ""
             },
@@ -379,7 +378,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ratchetphp/Ratchet/zipball/a78c8d2ddff78aef1d05cbf08e8bdcf8c21e1b14",
+                "url": "https://api.github.com/repos/ratchetphp/Ratchet/zipball/340f036d371c38c187935c0ffce3e10378a63b06",
                 "reference": "340f036d371c38c187935c0ffce3e10378a63b06",
                 "shasum": ""
             },
@@ -432,7 +431,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cebe/markdown/zipball/2c368a9329cde1fdaac30b75d74e20b5c85f70a8",
+                "url": "https://api.github.com/repos/cebe/markdown/zipball/e2a490ceec590bf5bfd1b43bd424fb9dceceb7c5",
                 "reference": "e2a490ceec590bf5bfd1b43bd424fb9dceceb7c5",
                 "shasum": ""
             },
@@ -611,7 +610,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2015-08-05 01:03:42"
+            "time": "2015-08-05T01:03:42+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -669,7 +668,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2016-02-18 21:54:00"
+            "time": "2016-02-18T21:54:00+00:00"
         },
         {
             "name": "kartik-v/bootstrap-fileinput",
@@ -681,7 +680,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/b71f878364677bfcf45f5c229819f0b9940e024a",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/d2a3a3d5ddb5b378332049f2042fa62da21476b7",
                 "reference": "d2a3a3d5ddb5b378332049f2042fa62da21476b7",
                 "shasum": ""
             },
@@ -734,7 +733,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/71b4204c9966ea16393c736a06f76bffaa12e165",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/473fb568ff1144dc49bdb74f40a5d7f025fc72e4",
                 "reference": "473fb568ff1144dc49bdb74f40a5d7f025fc72e4",
                 "shasum": ""
             },
@@ -832,7 +831,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datepicker/zipball/33c7f4751291eaa34413b7b82b1659ae44ea8b23",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datepicker/zipball/e589d2463b2a3077e07364b48a2eb7dc399ec49b",
                 "reference": "e589d2463b2a3077e07364b48a2eb7dc399ec49b",
                 "shasum": ""
             },
@@ -886,7 +885,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/744e12c1f5be45357ec50eea6f678ecc9ba67dc2",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/6fc8922716bf0b3638c67ff0895a9ff688b6c027",
                 "reference": "6fc8922716bf0b3638c67ff0895a9ff688b6c027",
                 "shasum": ""
             },
@@ -941,7 +940,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/a37f76a565e99119ac013fc92ce081ffccb7f858",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/35b527b524cb79d62bb4f9a6e8befe8ea74e5f2e",
                 "reference": "35b527b524cb79d62bb4f9a6e8befe8ea74e5f2e",
                 "shasum": ""
             },
@@ -994,7 +993,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
                 "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
                 "shasum": ""
             },
@@ -1079,7 +1078,7 @@
                 "rfc6455",
                 "websocket"
             ],
-            "time": "2016-03-16 12:32:52"
+            "time": "2016-03-16T12:32:52+00:00"
         },
         {
             "name": "react/event-loop",
@@ -1123,7 +1122,7 @@
                 "asynchronous",
                 "event-loop"
             ],
-            "time": "2016-03-08 02:09:32"
+            "time": "2016-03-08T02:09:32+00:00"
         },
         {
             "name": "react/socket",
@@ -1212,7 +1211,7 @@
                 "pipe",
                 "stream"
             ],
-            "time": "2015-10-07 18:32:58"
+            "time": "2015-10-07T18:32:58+00:00"
         },
         {
             "name": "react/zmq",
@@ -1307,7 +1306,7 @@
                 "iri",
                 "sockets"
             ],
-            "time": "2014-05-18 04:59:02"
+            "time": "2014-05-18T04:59:02+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1319,7 +1318,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/a6d30977565081bc9b177b627bff2e2ba905224c",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/fffbc0e2a7e376dbb0a4b5f2ff6847330f20ccf9",
                 "reference": "fffbc0e2a7e376dbb0a4b5f2ff6847330f20ccf9",
                 "shasum": ""
             },
@@ -1372,7 +1371,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/1457a889ff1ba1531853cddb3244539c81921efe",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/d55e325bbb40117d879c3285886d3711a4f4f623",
                 "reference": "d55e325bbb40117d879c3285886d3711a4f4f623",
                 "shasum": ""
             },
@@ -1425,7 +1424,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/53ad9faffe141fbe8f98cd6a7fd9a5e84513f56c",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/1289d16209491b584839022f29257ad859b8532d",
                 "reference": "1289d16209491b584839022f29257ad859b8532d",
                 "shasum": ""
             },
@@ -1484,7 +1483,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/75a1dee97199aca3aa4795773a55a2e96a6da498",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/496038466add75c605e83037d5b94d2b6491c8d8",
                 "reference": "496038466add75c605e83037d5b94d2b6491c8d8",
                 "shasum": ""
             },
@@ -1550,6 +1549,61 @@
             "time": "2016-04-02 08:08:03"
         },
         {
+            "name": "telegram-bot/api",
+            "version": "v2.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TelegramBot/Api.git",
+                "reference": "d4b883c53bc622e01d5582f6ff754ef9a8c001ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TelegramBot/Api/zipball/d4b883c53bc622e01d5582f6ff754ef9a8c001ad",
+                "reference": "d4b883c53bc622e01d5582f6ff754ef9a8c001ad",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "*",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TelegramBot\\Api\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ilya Gusev",
+                    "email": "mail@igusev.ru",
+                    "homepage": "https://php-cat.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Wrapper for Telegram Bot API",
+            "homepage": "https://github.com/TelegramBot/Api",
+            "keywords": [
+                "bot",
+                "bot api",
+                "php",
+                "telegram"
+            ],
+            "time": "2015-12-18T09:12:31+00:00"
+        },
+        {
             "name": "vinlock/stream-api",
             "version": "1.3.1",
             "source": {
@@ -1590,7 +1644,7 @@
                 "stream",
                 "twitch.tv"
             ],
-            "time": "2016-05-30 21:44:51"
+            "time": "2016-05-30T21:44:51+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -1696,7 +1750,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/145235ffad542c7cf9a2736e9d119471fab9dbf9",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/79ef1b1d0976a0eec8b7699f558b10e38b6501db",
                 "reference": "79ef1b1d0976a0eec8b7699f558b10e38b6501db",
                 "shasum": ""
             },
@@ -1746,7 +1800,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/e882cc327a6935a41f2e8665b9ef0317f6852d4d",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/348122de0b2c2e343b579f93fcda1da78cab4912",
                 "reference": "348122de0b2c2e343b579f93fcda1da78cab4912",
                 "shasum": ""
             },
@@ -1829,7 +1883,7 @@
                 "session",
                 "yii2"
             ],
-            "time": "2016-03-17 04:11:03"
+            "time": "2016-03-17T04:11:03+00:00"
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
@@ -1841,7 +1895,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/8e3e92f032e7400c2593fe26e1832c4d0a832b65",
+                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/2d759ae40cddcf34c3dfb9faa49a5027ec83f91f",
                 "reference": "2d759ae40cddcf34c3dfb9faa49a5027ec83f91f",
                 "shasum": ""
             },
@@ -1923,7 +1977,7 @@
                 "generator",
                 "rss"
             ],
-            "time": "2014-11-15 00:00:00"
+            "time": "2014-11-15T00:00:00+00:00"
         },
         {
             "name": "zelenin/yii2-rss",
@@ -2014,7 +2068,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2015-06-16 08:41:19"
+            "time": "2015-06-16T08:41:19+00:00"
         }
     ],
     "packages-dev": [

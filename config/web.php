@@ -50,7 +50,8 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 "/" => "site/index",
-                "/<action:[a-z0-9\-]{3,20}>" => "site/<action>",
+                "/<action:[a-z0-9\- ]{3,20}>" => "site/<action>",
+                "/<action:[a-z\- ]{3,20}>/<key:(.*)>" => "site/<action>",
             ],
         ],
 
