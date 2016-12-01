@@ -1,0 +1,34 @@
+{
+    "name": "zelenin/yii2-slug-behavior",
+    "description": "Yii2 slug behavior",
+    "type": "yii2-extension",
+    "keywords": [
+        "yii",
+        "yii2",
+        "slug",
+        "behavior"
+    ],
+    "homepage": "https://github.com/zelenin/yii2-slug-behavior",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksandr Zelenin",
+            "email": "aleksandr@zelenin.me",
+            "homepage": "http://zelenin.me",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/zelenin/yii2-slug-behavior/issues",
+        "source": "https://github.com/zelenin/yii2-slug-behavior"
+    },
+    "require": {
+        "yiisoft/yii2": "~2.0",
+        "2amigos/yii2-transliterator-helper": "~0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zelenin\\yii\\behaviors\\": ""
+        }
+    }
+}

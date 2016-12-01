@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use Yii;
 use yii\filters\AccessControl;
+use yii\helpers\Url;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
@@ -61,20 +62,15 @@ class SiteController extends Controller
     {
         $output = array();
 
-        //$json = json_decode(\Requests::get('https://api.twitch.tv/kraken/games/top')->body, TRUE);
-
         $twitch = \Vinlock\StreamAPI\Services\Twitch::games();
+        $hitBox = \Vinlock\StreamAPI\Services\Hitbox::games();
 
-        $merge = \Vinlock\StreamAPI\Services\Service::merge($twitch);
+        $merge = \Vinlock\StreamAPI\Services\Service::merge($hitBox)->cut(15);
 
-        $merge = $merge->cut(2);
-
-        $channels = $twitch->getArray();
-
-        foreach ($channels as $channel){
+        foreach ($merge->get() as $obj){
             $output[] = array(
-                'image' => $channel['game']['box']['large'],
-                'href' => '/game/' . rawurlencode($channel['game']['name'])
+                'image' => $obj->previewGame(),
+                'href' => Url::toRoute('/game/' . rawurlencode($obj->game()))
             );
         }
 
@@ -90,20 +86,17 @@ class SiteController extends Controller
 
         $output = array();
 
+        //$goodGame = \Vinlock\StreamAPI\Services\Goodgame::game($key);
         $twitch = \Vinlock\StreamAPI\Services\Twitch::game($key);
         $hitBox = \Vinlock\StreamAPI\Services\Hitbox::game($key);
 
-        $merge = \Vinlock\StreamAPI\Services\Service::merge($twitch, $hitBox);
+        $merge = \Vinlock\StreamAPI\Services\Service::merge($hitBox, $twitch)->cut(10);
 
-        $merge = $merge->cut();
-
-        $streams = $merge->getArray();
-
-        foreach ($streams as $stream){
+        foreach ($merge->get() as $obj){
             $output[] = array(
-                'preview' => $stream['preview']['medium'],
-                'name' => $stream['channel']['name'],
-                'href' => '/channel/' . rawurlencode($stream['channel']['name'])
+                'preview' => $obj->preview('medium'),
+                'name' => $obj->username(),
+                'href' => Url::toRoute('/channel/' . rawurlencode($obj->username()))
             );
         }
 
