@@ -58,6 +58,10 @@ class SiteController extends Controller
         ];
     }
 
+    /**
+     * @return string
+     */
+
     public function actionIndex()
     {
         $output = array();
@@ -65,7 +69,7 @@ class SiteController extends Controller
         $twitch = \Vinlock\StreamAPI\Services\Twitch::games();
         $hitBox = \Vinlock\StreamAPI\Services\Hitbox::games();
 
-        $merge = \Vinlock\StreamAPI\Services\Service::merge($hitBox)->cut(15);
+        $merge = \Vinlock\StreamAPI\Services\Service::merge($hitBox, $twitch)->cut(30);
 
         foreach ($merge->get() as $obj){
             $output[] = array(
@@ -90,7 +94,7 @@ class SiteController extends Controller
         $twitch = \Vinlock\StreamAPI\Services\Twitch::game($key);
         $hitBox = \Vinlock\StreamAPI\Services\Hitbox::game($key);
 
-        $merge = \Vinlock\StreamAPI\Services\Service::merge($hitBox, $twitch)->cut(10);
+        $merge = \Vinlock\StreamAPI\Services\Service::merge($hitBox, $twitch)->cut(20);
 
         foreach ($merge->get() as $obj){
             $output[] = array(
@@ -105,18 +109,37 @@ class SiteController extends Controller
 
     public function actionChannel($key){
 
+        $output = array();
+        $videoPlayer = '';
+
         $channels = explode('&', $key);
 
+        //$goodGame = new \Vinlock\StreamAPI\Services\Goodgame($channels);
         $twitch = new \Vinlock\StreamAPI\Services\Twitch($channels);
         $hitBox = new \Vinlock\StreamAPI\Services\Hitbox($channels);
 
-        $merge = \Vinlock\StreamAPI\Services\Service::merge($twitch);
+        $merge = \Vinlock\StreamAPI\Services\Service::merge($hitBox, $twitch);
 
-        $merge = $merge->cut();
+        foreach ($merge->get() as $obj){
+            $class = new \ReflectionClass($obj);
+            switch (get_class($obj)):
+                case $class->getNamespaceName() . '\Goodgame':
+                    $videoPlayer = $obj->url();
+                    break;
+                case $class->getNamespaceName() . '\Twitch':
+                    $videoPlayer = '<iframe src="' . $obj->url() .'/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe>';
+                    break;
+                case $class->getNamespaceName() . '\Hitbox':
+                    $videoPlayer = '<iframe src="' . $obj->url() .'" frameborder="0" scrolling="no" height="378" width="620"></iframe>';
+                    break;
+            endswitch;
 
-        $channels = $merge->getArray();
+            $output[] = array(
+                'videoPlayer' => $videoPlayer
+            );
+        }
 
-        return $this->render('stream', ['streams' => $channels]);
+        return $this->render('stream', ['streams' => $output]);
     }
 
     /**

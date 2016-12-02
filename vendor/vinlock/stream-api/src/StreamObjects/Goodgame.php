@@ -14,19 +14,19 @@ class Goodgame extends Stream implements StreamInterface
 {
     protected $service = 'goodgame';
 
-    const STREAM_KEY = "livestream";
+    const STREAM_KEY = "";
 
-    const GAMES_KEY = "categories";
+    const GAMES_KEY = "";
 
-    const STREAM_API = "http://goodgame.ru/api/getggchannelstatus?fmt=json&id=";
+    const STREAM_API = "http://goodgame.ru/api/getchannelstatus?fmt=json&id=";
 
     const GAMES_API = "http://goodgame.ru/api/getchannelsbygame?game=";
 
-    const ALL_GAMES_API = "https://api.hitbox.tv/games";
+    const ALL_GAMES_API = "";
 
     const STREAM_IMG = "http://edge.sf.hitbox.tv";
 
-    const STREAM_URL = "http://www.hitbox.tv/";
+    const STREAM_URL = "http://goodgame.ru/";
 
     public function __construct($array) {
         $this->stream = $array;
@@ -129,7 +129,7 @@ class Goodgame extends Stream implements StreamInterface
      * @return string
      */
     public function url() {
-        return stripslashes($this->stream['channel']['channel_link']);
+        return stripslashes($this->stream['embed']);
     }
 
     /**

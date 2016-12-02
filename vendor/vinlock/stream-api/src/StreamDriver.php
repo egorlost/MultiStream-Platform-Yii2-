@@ -46,15 +46,24 @@ abstract class StreamDriver {
 
         $chunks = array_chunk($stream_usernames, self::NUM_PER_MULTI);
 
+        $client_id = ($service === 'twitch') ? '&client_id=' . self::CLIENT_ID : '';
+
         foreach ($chunks as $chunk) {
             $list = implode(",", $chunk);
 
-            $json = json_decode(self::curl_get_contents(self::$providers[$service]::STREAM_API.$list . '&client_id=' . self::CLIENT_ID), true);
+            $json = json_decode(self::curl_get_contents(self::$providers[$service]::STREAM_API . $list . $client_id ), true);
 
-            if(empty($json['error'])){
-                foreach ($json[self::$providers[$service]::STREAM_KEY] as $stream) {
-                    $streamObject = new self::$providers[$service]($stream);
-                    array_push($streams, $streamObject);
+            if($json){
+                if(isset($json[self::$providers[$service]::STREAM_KEY])){
+                    foreach ($json[self::$providers[$service]::STREAM_KEY] as $stream) {
+                        $streamObject = new self::$providers[$service]($stream);
+                        array_push($streams, $streamObject);
+                    }
+                } elseif(!isset($json['error'])){
+                    foreach ($json as $stream) {
+                        $streamObject = new self::$providers[$service]($stream);
+                        array_push($streams, $streamObject);
+                    }
                 }
             }
         }

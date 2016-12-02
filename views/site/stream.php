@@ -5,8 +5,8 @@
 <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>-->
 <div id="wrapper">
     <div id="main-container">
-        <?php foreach ($streams as $stream): ?>
-        <iframe src="<?php echo $stream['channel']['url']?>/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe>
-        <?php endforeach; ?>
+        <?php foreach ($streams as $stream):
+            echo $stream['videoPlayer'];
+        endforeach; ?>
     </div>
 </div>
